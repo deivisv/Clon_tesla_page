@@ -1,0 +1,27 @@
+.padre {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    
+}
+
+.colores {
+    width: 600px;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.c1 {
+    background-color: beige;
+}
+
+.c2 {
+    background-color: aqua;
+}
+
+.c3 {
+    background-color: black;
+}
+
+.c4 {
+    background-color: blueviolet;
+}
