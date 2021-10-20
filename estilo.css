@@ -29,6 +29,26 @@ a:hover {
 }
 
 .logoT {
-    max-width: 120px;
-    max-height: 30px;
+    width: 10vw;
+}
+
+.men {
+    background-color: transparent;
+    margin: 0 15px;
+}
+
+@media (max-width: 800px) {
+    .logoT {
+        width: 25vw;
+
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .logoT {
+        width: 18vw;
+
+
+    }
 }
