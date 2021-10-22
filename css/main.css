@@ -1,10 +1,12 @@
+::-webkit-scrollbar {display: none;}
+
 body{
     color: #fff !important;
 }
 
 .seccion-1{
-    min-height: 698px !important;
-    min-width: 1301px !important;
+    max-height: 660px !important;
+    max-width: 1301px !important;
 }
 
 .seccion-1-1{
@@ -61,4 +63,16 @@ body{
 
 .seccion-1-1-1{
     margin-top: 22em !important;
+}
+
+.seccion-2{
+    max-width: 1301px !important;
+    max-height: 550px !important;
+}
+
+.seccion-2-2{
+    width: 100% !important;
+    height: 100% !important;
+    background-image: url(../img/background_img_two.jpg) !important;
+    background-size: cover !important; 
 }
