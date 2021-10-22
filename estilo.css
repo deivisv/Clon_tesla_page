@@ -1,5 +1,3 @@
-
-
 .banner a {
     color: #5c5c5c;
     text-decoration: none;
@@ -25,10 +23,6 @@
     scroll-snap-align: start !important;
     scroll-behavior: smooth;
 }
-
-
-
-
 
 .img1 {
     background-image: url('imagenes/ModelS.jpg');
@@ -111,8 +105,6 @@
     color: black;
 
 }
-
-
 
 .banner {
     height: 53px;  
