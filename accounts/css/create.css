@@ -96,13 +96,13 @@ label {
     border: none;
 }
 
-input {
+.input-normal {
     background-color: var(--bg-fondos) !important;
     border-color: hsla(228, 3%, 37%, 0) !important;
-    transition: all 1s;       
+    transition: all 0.8s;       
 }
 
-input:focus, .dropdown-pais:focus, .dropdown-idioma:focus{
+.input-normal:focus, .dropdown-pais:focus, .dropdown-idioma:focus{
     border: 1px solid #8d8d8d52 !important;
     outline: none;
     box-shadow: none !important;   
@@ -191,8 +191,6 @@ p a{
     width: 20px;
     margin: 0px 1px 2px 0px;
     padding-bottom: 1px;
-
-/*     fill: #035bff; */
     color: #393c41;
     border-right: 2px transparent;
 }
@@ -233,6 +231,16 @@ p a{
     margin-left: 0px;
     text-align: justify;
     color: var(--color-gris);
+}
+
+.advertencia{
+    color: #ce5b4f;
+    font-weight: 500;
+    padding-left: 24px;
+}
+
+.input-advertencia {
+    border: 1px solid #B74134 !important;
 }
 
 @media (max-width: 599px){

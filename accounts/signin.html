@@ -29,7 +29,12 @@
             <div class="container contenedor-formulario mx-auto d-flex flex-column">
                 <h1 class="sign-in mt-3 pt-3">Sign In</h1>
 
-                <form class="formulario d-flex flex-column">
+                <form class="formulario d-flex flex-column" id="formulario-signin">
+
+                    <div class="caja-info d-flex flex-row align-items-center justify-content-center" id="nocuenta">
+<!--                         <img src="img/info-32-orange.png" class="info-naranja" alt="orange info icon">
+                        <p class="p-info">We don't recognize this email address and password combination</p> -->
+                    </div>
 
                     <div class="mb-3">
                         <label for="correo" class="form-label fw-bold">Email Address</label>
@@ -45,12 +50,12 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label fw-bold mt-1 ms-4">Password</label>
-                        <input type="password" class="form-control form-inputs ps-4" id="exampleInputPassword1">
+                        <label for="contrasena" class="form-label fw-bold mt-1 ms-4">Password</label>
+                        <input type="password" class="form-control form-inputs ps-4" id="contrasena">
                     </div>
 
-                    <button type="button" class="btn mt-1 btn-primary boton-sign">SIGN IN</button>
-                    <button type="button" class="btn mt-3 boton-cancel">CANCEL</button>
+                    <button type="button" class="btn mt-1 btn-primary boton-sign" onclick="loggearse()">SIGN IN</button>
+                    <button type="button" class="btn mt-3 boton-cancel" onclick="devolverse()">CANCEL</button>
                 </form>
 
                 <p class="forgot d-flex justify-content-center align-items-center"><a href="#" class="links-forgot">Forgot email?</a>|<a href="#" class="links-forgot">Forgot password?</a></p>
@@ -104,6 +109,7 @@
             })
 
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

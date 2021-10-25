@@ -31,10 +31,10 @@
             <div class="container contenedor-formulario mx-auto d-flex flex-column">
                 <h1 class="create">Create Account</h1>
 
-                <form class="formulario d-flex flex-column">
+                <form class="formulario d-flex flex-column" id="mi-formulario">
 
                     <div>
-                        <label for="correo" class="form-label-mercado fw-bold">Select Market</label>
+                        <label for="pais" class="form-label-mercado fw-bold">Select Market</label>
 
                         <select class="form-select dropdown-pais mt-2" id="pais">
                             <optgroup class="norteamerica" label="North America">
@@ -51,7 +51,7 @@
                 
                 
                     <div>
-                        <label for="correo" class="form-label fw-bold">Select Language</label>
+                        <label for="idioma" class="form-label fw-bold">Select Language</label>
                         
                     
                         <button type="button" class="pops" data-bs-trigger="hover focus" data-bs-toggle="popover" data-bs-container="body" data-bs-placement="bottom" data-bs-template='<div class="popover" role="tooltip"></h3><div class="popover-body"></div></div>' data-bs-html="true" 
@@ -70,18 +70,31 @@
 
                     <div>
                         <label for="nombre" class="form-label fw-bold mt-3 ms-4">First Name</label>
-                        <input type="text" class="form-control form-inputs ps-3" id="nombre">
+                        <input type="text" class="form-control form-inputs ps-3 input-normal" id="nombre">
+                    </div>
+
+                    <div class="advertencia" id="nonombre">
+                        
                     </div>
 
                     <div>
                         <label for="apellido" class="form-label fw-bold mt-3 ms-4">Last Name</label>
-                        <input type="text" class="form-control form-inputs ps-3" id="apellido">
+                        <input type="text" class="form-control form-inputs ps-3 input-normal" id="apellido">
+                    </div>
+
+                    <div class="advertencia" id="noapellido">
+                        
                     </div>
 
                     <div>
                         <label for="correo" class="form-label fw-bold mt-3 ms-4">Email Address</label>
-                        <input type="email" class="form-control form-inputs ps-3" id="correo">
+                        <input type="email" class="form-control form-inputs ps-3 input-normal" id="correo">
                     </div>
+
+                    <div class="advertencia" id="nocorreo">
+                        
+                    </div>
+
 
                     <div>
                         <label for="contrasena" class="form-label fw-bold mt-3 ms-4">Password</label>
@@ -90,12 +103,14 @@
                             <img src="img/info-32.png" alt="tooltip" class="tooltip-img">   
 
                         </button>
-                        <input type="password" class="form-control form-inputs ps-3" id="contrasena">
+                        <input type="password" class="form-control form-inputs ps-3 input-normal" id="contrasena">
                     </div>
 
+                    <div class="advertencia" id="nocontrasena">
+                        
+                    </div>
 
-
-                    <button type="button" class="btn mt-3 btn-primary boton-sign">CREATE ACCOUNT</button>
+                    <button type="button" class="btn mt-3 btn-primary boton-sign" onclick="guardarInfo()">CREATE ACCOUNT</button>
 
                     <button type="button" class="btn mt-3 boton-cancel">CANCEL</button>
                 </form>
@@ -148,6 +163,7 @@
         })
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/script.js"></script>
     </body>
 </html>
