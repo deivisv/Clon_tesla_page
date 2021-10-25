@@ -163,3 +163,23 @@ body{
 .contenedor-cuatro .right-content{
     max-width: 27% !important;
 }
+
+.contenedor-seis{
+    max-height: 667px !important;
+    max-width: var(--var-100-porcentaje) !important;
+}
+
+.contenedor-seis .left-content{
+    max-width: 32% !important;
+}
+
+.contenedor-seis .right-content{
+    position: relative;
+}
+
+.contenedor-seis .right-content img{
+    max-height: var(--var-100-porcentaje) !important;
+    max-width: 140% !important;
+    object-position: center;
+    object-fit: cover;
+}
