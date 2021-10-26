@@ -36,62 +36,70 @@ function color_carro(nombre_color_archivo) {
             
             `
 }
-color_carro('Model_Y_blanco', true)
+color_carro('Model_S_blanco', true)
 
 function info_motor0 (informacion_motor){
   let info_motor_traccion =document.getElementById("id_range")
   let info_motor_alcance =document.getElementById("id_plaid")
   
-  info_motor_traccion.innerHTML = `
-   30000
-  `
-  info_motor_alcance.innerHTML = `
-   60000
-  `
+  info_motor_traccion.innerHTML = ` $94,940  `
+  info_motor_alcance.innerHTML = `  $129,990   `
 }
 info_motor0(1,true)
 
 function info_motor1 (){
   let info_motor_traccion =document.getElementById("id_range")
   let info_motor_alcance =document.getElementById("id_plaid")
-  
-  info_motor_traccion.innerHTML = `
-   23566
-  `
-  info_motor_alcance.innerHTML = `
-   80000
-  `
+ 
+  info_motor_traccion.innerHTML = ` $88,740*   `
+  info_motor_alcance.innerHTML = `  $123,740*   `
+
 }
 
 function info_vel_0 (info_vel){
   let = info_vel_motor_mi = document.getElementById("num_millas")
   let = info_vel_motor_mph = document.getElementById("num_mph")
   let = info_vel_motor_sec = document.getElementById("num_sec")
+  let info_motor_mensaje =document.getElementById("idmensaje3")
+  let info_fecha =document.getElementById("fecha_entrega")
 
-  info_vel_motor_mi.innerHTML = `
-  405
+  info_vel_motor_mi.innerHTML = `  405  `
+  info_vel_motor_mph.innerHTML = `  115  `
+  info_vel_motor_sec.innerHTML = `  3,1  `
+  info_motor_mensaje.innerHTML = `  
+  <div>
+  </div>
   `
-  info_vel_motor_mph.innerHTML = `
-  115
-  `
-  info_vel_motor_sec.innerHTML = `
-  3,1
-  `
+  info_fecha.innerHTML=`<p>Est. Delivery: June</p>`
+
 }
+
 info_vel_0(1,true)
 
 function info_vel_1 (info_vel){
   let = info_vel_motor_mi = document.getElementById("num_millas")
   let = info_vel_motor_mph = document.getElementById("num_mph")
   let = info_vel_motor_sec = document.getElementById("num_sec")
+  let info_motor_mensaje =document.getElementById("idmensaje3")
+  let info_fecha =document.getElementById("fecha_entrega")
 
-  info_vel_motor_mi.innerHTML = `
-  305
-  `
-  info_vel_motor_mph.innerHTML = `
-  100
-  `
-  info_vel_motor_sec.innerHTML = `
-  2,1
-  `
+  info_vel_motor_mi.innerHTML = `  369  `
+  info_vel_motor_mph.innerHTML = `  200  `
+  info_vel_motor_sec.innerHTML = `  1.99  `
+
+  info_motor_mensaje.innerHTML = `  
+  <div>
+      <h2>Plaid Upgrades</h2>
+      <h6>Included</h6>
+      <lu>
+          <li>Quickest accelerating car in production today</li>
+          <li>0-60 mph: 1.99s</li>
+          <li>1/4 mile: 9.23@155 mph trap speed</li>
+          <li>1,020 horsepower</li>
+          <li>Three high performance motors with carbon-sleeved rotors</li>
+          <li>Torque vectoring</li>
+      </lu>
+    </div>
+      `
+    info_fecha.innerHTML=`<p>Est. Delivery: December</p>`
 }
