@@ -42,31 +42,31 @@ function color_carro(nombre_color_archivo) {
   let nombre_color = document.getElementById("precio_color")
   switch (nombre_color_archivo) {
 
-    case "Model_S_blanco":
+    case "Model_X_blanco":
       nombre_color.innerHTML = `
                   <h6>Pearl White Multi-Coat </h6>
                     <p> Included</p>
                   `
       break;
-    case "Model_S_negro":
+    case "Model_X_negro":
       nombre_color.innerHTML = `
                  <h6> Solid Black</h6>
                     <p> $1,500</p>
                   `
       break;
-    case "Model_S_gris":
+    case "Model_X_gris":
       nombre_color.innerHTML = `
                     <h6>Midnight Silver Metallic </h6>
                     <p> $1,500</p>
                   `
       break;
-    case "Model_S_azul":
+    case "Model_X_azul":
       nombre_color.innerHTML = `
                     <h6>Deep Blue Metallic </h6>
                     <p> $1,500</p>
                   `
       break;
-    case "Model_S_rojo":
+    case "Model_X_rojo":
       nombre_color.innerHTML = `
                     <h6>Red Multi-Coat </h6>
                     <p> $2,500</p>
@@ -76,16 +76,16 @@ function color_carro(nombre_color_archivo) {
 
 
 }
-color_carro('Model_S_blanco', true)
+color_carro('Model_X_blanco', true)
 
 
 function info_motor0(informacion_motor) {
   let info_motor_traccion = document.getElementById("id_range")
-  let info_motor_alcance = document.getElementById("id_plaid") 
+  let info_motor_alcance = document.getElementById("id_plaid")
   let mensaje_2 = document.getElementById("mensaje_2")
 
-  info_motor_traccion.innerHTML = ` $94,940  `
-  info_motor_alcance.innerHTML = `  $129,990   `
+  info_motor_traccion.innerHTML = ` $104,990  `
+  info_motor_alcance.innerHTML = `  $119,990   `
   mensaje_2.innerHTML = `
   <p>All prices are shown without potential incentives or gas savings of $0. 
                          <a href="#"> Learn More </a></p>
@@ -98,10 +98,10 @@ function info_motor1() {
   let info_motor_alcance = document.getElementById("id_plaid")
   let mensaje_2 = document.getElementById("mensaje_2")
 
-  info_motor_traccion.innerHTML = ` $88,740*   `
-  info_motor_alcance.innerHTML = `  $123,740*   `
+  info_motor_traccion.innerHTML = ` $98,940*   `
+  info_motor_alcance.innerHTML = `  $113,940*   `
   mensaje_2.innerHTML = `
-  <p>* Prices above include potential incentives and gas savings of $0. 
+  <p>* Costs above include potential incentives and gas savings of $0. 
                          <a href="#"> Learn More </a></p>
   `
 }
@@ -113,14 +113,14 @@ function info_vel_0(info_vel) {
   let info_motor_mensaje = document.getElementById("idmensaje3")
   let info_fecha = document.getElementById("fecha_entrega")
 
-  info_vel_motor_mi.innerHTML = `  405  `
-  info_vel_motor_mph.innerHTML = `  115  `
-  info_vel_motor_sec.innerHTML = `  3,1  `
+  info_vel_motor_mi.innerHTML = `  360  `
+  info_vel_motor_mph.innerHTML = `  155  `
+  info_vel_motor_sec.innerHTML = `  3,8  `
   info_motor_mensaje.innerHTML = `  
   <div>
   </div>
   `
-  info_fecha.innerHTML = `<p>Est. Delivery: June</p>`
+  info_fecha.innerHTML = `<p>Est. Delivery: May-June</p>`
 
 }
 
@@ -133,9 +133,9 @@ function info_vel_1(info_vel) {
   let info_motor_mensaje = document.getElementById("idmensaje3")
   let info_fecha = document.getElementById("fecha_entrega")
 
-  info_vel_motor_mi.innerHTML = `  369  `
-  info_vel_motor_mph.innerHTML = `  200  `
-  info_vel_motor_sec.innerHTML = `  1.99  `
+  info_vel_motor_mi.innerHTML = `  340  `
+  info_vel_motor_mph.innerHTML = `  163  `
+  info_vel_motor_sec.innerHTML = `  2.5  `
 
   info_motor_mensaje.innerHTML = `  
   <div>
@@ -151,6 +151,6 @@ function info_vel_1(info_vel) {
       </lu>
     </div>
       `
-  info_fecha.innerHTML = `<p>Est. Delivery: December</p>`
+  info_fecha.innerHTML = `<p>Est. Delivery: May-June</p>`
 }
 

@@ -143,10 +143,12 @@ align-self: start;
 }
 .mensaje3{
     padding: 50px 0 0 0 ;
+    
 }
 .mensaje3 h2{
     margin-top: 15px;
     text-align: center;
+    justify-content: space-between;
 }
 .mensaje3 h6{
     text-align: center;
@@ -175,6 +177,21 @@ align-self: start;
     color: #5c5e62;
     font-size: 12px;
 }
-
+.ordenar button{
+        margin-top: 20px;
+        height: 45px;
+      
+        font-weight: 500;
+        text-align: center;
+        border-radius: 100px;
+        background:#3e6ae1;
+        border-color: #3e6ae1;;
+        width: 300px;
+        
+}
+.ordenar button span{
+    color: #fff;
+    font-size: 15px;
+}
 
 
