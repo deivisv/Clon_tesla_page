@@ -211,10 +211,10 @@ body{
     white-space: normal;
 }
 
-.contenedor-seis{/* 
-    max-height: 667px !important; */
-    /* max-width: var(--var-100-porcentaje) !important; */
-}
+/* .contenedor-seis{
+    max-height: 667px !important; 
+    max-width: var(--var-100-porcentaje) !important; 
+} */
 
 .contenedor-seis .left-content{
     max-width: 32% !important;
@@ -321,8 +321,8 @@ body{
     font-weight: 500 !important;
 }
 
-.contenedor-diez{
-    max-width: var(--var-100-porcentaje) !important;
+.contenedor-diez{/* 
+    max-width: var(--var-100-porcentaje) !important; */
     height: 667px !important;
 }
 

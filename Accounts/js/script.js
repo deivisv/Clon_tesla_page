@@ -13,7 +13,7 @@ function loggearse(){
                     timer: 3000
                 })
                 document.getElementById("formulario-signin").reset();
-                setTimeout(function(){window.location.href = "https://www.tesla.com"}, 4000);
+                setTimeout(function(){window.location.href = "../Home_page/index.html"}, 4000);
                 return;  
             }                        
     } document.getElementById("nocuenta").innerHTML =
@@ -24,17 +24,17 @@ function loggearse(){
 }
 
 function devolverse(){
-    setTimeout(function(){window.location.href = "https://www.tesla.com"}, 4000); /* cambiar por la página principal */
+    setTimeout(function(){window.location.href = "../Home_page/index.html"}, 2000); /* cambiar por la página principal */
     return;  
 }
 
 function ircrear(){
-    setTimeout(function(){window.location.href = "create.html"}, 4000); /* cambiar por la página principal */
+    setTimeout(function(){window.location.href = "create.html"}, 2000); /* cambiar por la página principal */
     return;  
 }
 
 function irsignin(){
-    setTimeout(function(){window.location.href = "signin.html"}, 4000); /* cambiar por la página principal */
+    setTimeout(function(){window.location.href = "signin.html"}, 2000); /* cambiar por la página principal */
     return;  
 }
 
@@ -126,38 +126,5 @@ function guardarInfo() {
         timer: 3000
     })
 
-    setTimeout(function(){window.location.href = "https://www.tesla.com"}, 4000);  /* cambiar por la página principal */
+    setTimeout(function(){window.location.href = "../Tesla_order/index.html"}, 2000);  /* cambiar por la página principal */
 }};
-
-/* function borrar_elemento(indice_dato){
-    console.log(indice_dato);
-
-    Swal.fire({
-        title: '¿Estás seguro de querer eliminar este dato?',
-        icon: 'question',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Sí. Borrar',
-        allowOutsideClick: false,
-        cancelButtonText: 'Cancelar'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            let body_tabla = document.querySelector("#data-usuario");
-            body_tabla.innerHTML = '';
-
-            localStorage.removeItem("nombre_" + indice_dato);
-            localStorage.removeItem("correo_" + indice_dato);
-            localStorage.removeItem("contrasena_" + indice_dato);
-            listadoInfo(1, true);
-
-
-            Swal.fire({
-                title: 'El dato ha sido eliminado.',
-                icon: 'success'
-            })
-            document.getElementById("mi_formulario").reset();
-        };
-    });
-};
- */
