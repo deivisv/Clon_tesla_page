@@ -15,14 +15,16 @@ body{
 
 .contenedor-uno{
     max-height: 660px !important;
-    max-width: var(--width-containers) !important;
+    /* max-width: var(--width-containers) !important; */
     background-image: url(../img/background_img_one.png) !important;
     background-repeat: no-repeat !important;
     background-size: var(--var-100-porcentaje) !important;
 }
 
 .barra-nav{
-    max-width: var(--var-100-porcentaje) !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .link-logo{
