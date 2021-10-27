@@ -21,27 +21,8 @@ body{
     background-size: var(--var-100-porcentaje) !important;
 }
 
-.barra-nav{
-    margin-left: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-.link-logo{
-    width: 120px !important;
-    height: 30px !important;
-    padding-top: 0 !important;
-    font-size: 15px !important;
-}
-
 .letras-tesla{
-    width: var(--var-100-porcentaje) !important;
-    color: #fff !important;
-}
-
-.collapse ul li{
-    padding-inline: 8px !important;
-    font-weight: 600 !important;
+    width: 40% !important;
 }
 
 .title{
