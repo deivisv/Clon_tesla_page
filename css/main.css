@@ -52,17 +52,17 @@ body{
     line-height: 17px !important;
 }
 
-.button-one{
+.button-one, 
+.button-cont-diez a{
     border: 3px solid #f5f5f5 !important;
     color: #e2e4e4 !important;
-    padding: 6px 55px !important;
 }
 
-.button-one:hover{
+.button-one:hover,
+.button-cont-diez a:hover{
     color: var(--text-color-two) !important;
     background-color: #f5f5f5 !important;
     border: var(--var-border-white) !important;
-    padding: 6px 55px !important;
     transition: border .33s ease,background-color .33s ease,color .33s ease !important;
 }
 
@@ -186,6 +186,48 @@ body{
     max-width: 27% !important;
 }
 
+.contenedor-cinco{
+    max-width: var(--var-100-porcentaje) !important;
+    height: 733px !important;
+}
+
+.contenedor-cinco .contenedor-in{
+    height: 100% !important;
+    max-width: var(--var-100-porcentaje) !important;
+}
+
+.contenedor-cinco .banner-in{
+    width: 70% !important;
+}
+
+.contenedor-cinco .tamaño-carousel{
+    max-height: 617px !important;
+    max-width: 50% !important;
+    margin: 0 auto !important;
+}
+
+.contenedor-cinco .controls-carousel{
+    max-width: var(--var-100-porcentaje) !important;
+    height: 190px !important;
+}
+
+.contenedor-cinco .nav-controls{
+    margin: 0 auto !important;
+    width: 60% !important;
+}
+
+.contenedor-cinco .nav-controls div section{
+    cursor: pointer;
+    border-top: 3px solid #393c41;
+}
+
+.contenedor-cinco .nav-controls div section button{
+    background-color: transparent !important;
+    border: none !important; 
+    text-align: left !important;
+    white-space: normal;
+}
+
 .contenedor-seis{
     max-height: 667px !important;
     max-width: var(--var-100-porcentaje) !important;
@@ -271,7 +313,8 @@ body{
     margin: 10% 0 10% 0 !important;
 }
 
-.contenedor-nueve h1{
+.contenedor-nueve h1,
+.contenedor-diez h1{
     font-size: 2rem !important;
     text-transform: none !important;
     color: var(--text-color) !important;
@@ -293,4 +336,35 @@ body{
 .contenedor-nueve .info-in ul li strong{
     padding-top: 1% !important;
     font-weight: 500 !important;
+}
+
+.contenedor-diez{
+    max-width: var(--var-100-porcentaje) !important;
+    height: 667px !important;
+}
+
+.contenedor-diez footer li{
+    list-style-type: none;
+    padding-left: 15px !important;
+    font-size: 14px !important;
+}
+
+.contenedor-diez a{
+    color: #d0d1d2 !important;
+    text-decoration: none;
+}
+
+.offcanvas-body a{
+    text-decoration: none;
+    color: #393C41 !important;
+    font-weight: 600 !important;
+}
+
+.offcanvas-body li{
+    padding: 5% 0% !important;
+}
+
+.offcanvas-body li:hover{
+    background-color: rgba(0,0,0,0.05) !important;
+    border-radius: 15% !important;
 }
