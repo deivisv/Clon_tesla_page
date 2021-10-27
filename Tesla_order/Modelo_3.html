@@ -54,7 +54,7 @@
 
                 <div class="modelo d-flex align-items-center flex-column mt-5">
                     <!-- modelo-->
-                    <h1> Model S</h1>
+                    <h1> Model 3</h1>
                     <div id="fecha_entrega">
                         
                     </div>
@@ -108,23 +108,31 @@
                     <p> <strong>Dual Motor All-Wheel Drive</strong></p>
                     <button onclick="info_vel_0()">
                         <span class="d-flex flex-row">
-                            <p> Long range </p>
-                            <p id="id_range"> </p>
+                            <p> Standar Range Plus </p>
+                            <p id="id_standar_range"> </p>
                         </span>
 
                     </button>
+
                     <!-- de largo alcance-->
                     <p><strong>Tri Motor All-Wheel Drive</strong></p>
                     <button onclick="info_vel_1()">
                         <span class="d-flex flex-row">
-                            <p> Plaid </p>
-                            <p id="id_plaid"> </p>
+                            <p> Long range </p>
+                            <p id="id_long_range"> </p>
+                        </span>
+
+                    </button>
+                    <button class="mt-1" onclick="info_vel_11()">
+                        <span class="d-flex flex-row">
+                            <p> performamce </p>
+                            <p id="id_performamce"> </p>
                         </span>
 
                     </button>
                     <!-- tartan-->
                 </div>
-                <div class="mensaje2"  id="mensaje_2">
+                <div class="mensaje2"   id="mensaje_2">
                     
                 </div>
 
@@ -138,18 +146,18 @@
                 </div>
                 <div class="d-flex flex-row align-items-center justify-content-center pintura">
 
-                    <img src="img/Paint_White.png" onclick="color_carro('Model_S_blanco')" alt="">
+                    <img src="img/Paint_White.png" onclick="color_carro('Model_3_blanco')" alt="">
 
-                    <img src="img/Paint_Black.png" onclick="color_carro('Model_S_negro')" alt="">
+                    <img src="img/Paint_Black.png" onclick="color_carro('Model_3_negro')" alt="">
 
-                    <img src="img/Paint_gray.png" onclick="color_carro('Model_S_gris')" alt="">
+                    <img src="img/Paint_gray.png" onclick="color_carro('Model_3_gris')" alt="">
 
-                    <img src="img/Paint_Blue.png" onclick="color_carro('Model_S_azul')" alt="">
+                    <img src="img/Paint_Blue.png" onclick="color_carro('Model_3_azul')" alt="">
 
-                    <img src="img/Paint_Red.png" onclick="color_carro('Model_S_rojo')" alt="">
+                    <img src="img/Paint_Red.png" onclick="color_carro('Model_3_rojo')" alt="">
                 </div>
                 <!--Precio Color-->
-                <div class="d-flex flex-row justify-content-center  align-items-center mt-2" id="precio_color">
+                <div class="d-flex flex-row justify-content-center  align-items-center mt-5" id="precio_color">
                   
                 </div>
 
@@ -183,13 +191,13 @@
                             watch video
                         </a>
                     </p>
-                     <div class="d-flex  flex-column justify-content-center  align-items-center mt-5 mb-5 ordenar">
-                        <h2>Order Your Model S</h2>
+                    
+                    <div class="d-flex  flex-column justify-content-center  align-items-center mt-5 mb-5 ordenar">
+                        <h2>Order Your Model 3</h2>
                         <a href="../Accounts/signin.html">
-                            <button type="button"><span>Continue to payment</span></button>
+                        <button type="button"><span>Continue to payment</span></button>
                         </a>
                     </div>
-                    
        
                 </div>
 
@@ -204,7 +212,7 @@
 
 
     <script src="js/bt/bootstrap.min.js"></script>
-    <script src="js/made.js"></script>
+    <script src="js/made_modelo_3.js"></script>
 </body>
 
 </html>
