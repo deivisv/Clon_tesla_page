@@ -1,17 +1,19 @@
 
+
+
 function color_carro(nombre_color_archivo) {
-    let contenedor_color = document.getElementById("contenedor_carousel")
-    let contenido = ''
-    let active_slider = ''
-    for (let x = 0; x < 5; x++) {
-        active_slider = (x == 1) ? "active" : ""
-        contenido += `
+  let contenedor_color = document.getElementById("contenedor_carousel")
+  let contenido = ''
+  let active_slider = ''
+  for (let x = 0; x < 5; x++) {
+    active_slider = (x == 1) ? "active" : ""
+    contenido += `
 			<div class="carousel-item ${active_slider}">
                 <img src="img/${nombre_color_archivo}_${x}.jpg" class="d-block w-100" alt="...">
 			</div>
 		`
-    }
-    contenedor_color.innerHTML = `
+  }
+  contenedor_color.innerHTML = `
 		<div id="slider_carros" class=" sticky-top carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               	<button type="button" data-bs-target="#slider_carros" data-bs-slide-to="0" class="active"
@@ -35,33 +37,72 @@ function color_carro(nombre_color_archivo) {
 		</div>
             
             `
+
+
+  let nombre_color = document.getElementById("precio_color")
+  switch (nombre_color_archivo) {
+
+    case "Model_S_blanco":
+      nombre_color.innerHTML = `
+                  <h6>Pearl White Multi-Coat </h6>
+                    <p> Included</p>
+                  `
+      break;
+    case "Model_S_negro":
+      nombre_color.innerHTML = `
+                 <h6> Solid Black</h6>
+                    <p> $1,500</p>
+                  `
+      break;
+    case "Model_S_gris":
+      nombre_color.innerHTML = `
+                    <h6>Midnight Silver Metallic </h6>
+                    <p> $1,500</p>
+                  `
+      break;
+    case "Model_S_azul":
+      nombre_color.innerHTML = `
+                    <h6>Deep Blue Metallic </h6>
+                    <p> $1,500</p>
+                  `
+      break;
+    case "Model_S_rojo":
+      nombre_color.innerHTML = `
+                    <h6>Red Multi-Coat </h6>
+                    <p> $2,500</p>
+                      `
+      break;
+  }
+
+
 }
 color_carro('Model_S_blanco', true)
 
-function info_motor0 (informacion_motor){
-  let info_motor_traccion =document.getElementById("id_range")
-  let info_motor_alcance =document.getElementById("id_plaid")
-  
+
+function info_motor0(informacion_motor) {
+  let info_motor_traccion = document.getElementById("id_range")
+  let info_motor_alcance = document.getElementById("id_plaid")
+
   info_motor_traccion.innerHTML = ` $94,940  `
   info_motor_alcance.innerHTML = `  $129,990   `
 }
-info_motor0(1,true)
+info_motor0(1, true)
 
-function info_motor1 (){
-  let info_motor_traccion =document.getElementById("id_range")
-  let info_motor_alcance =document.getElementById("id_plaid")
- 
+function info_motor1() {
+  let info_motor_traccion = document.getElementById("id_range")
+  let info_motor_alcance = document.getElementById("id_plaid")
+
   info_motor_traccion.innerHTML = ` $88,740*   `
   info_motor_alcance.innerHTML = `  $123,740*   `
 
 }
 
-function info_vel_0 (info_vel){
+function info_vel_0(info_vel) {
   let = info_vel_motor_mi = document.getElementById("num_millas")
   let = info_vel_motor_mph = document.getElementById("num_mph")
   let = info_vel_motor_sec = document.getElementById("num_sec")
-  let info_motor_mensaje =document.getElementById("idmensaje3")
-  let info_fecha =document.getElementById("fecha_entrega")
+  let info_motor_mensaje = document.getElementById("idmensaje3")
+  let info_fecha = document.getElementById("fecha_entrega")
 
   info_vel_motor_mi.innerHTML = `  405  `
   info_vel_motor_mph.innerHTML = `  115  `
@@ -70,18 +111,18 @@ function info_vel_0 (info_vel){
   <div>
   </div>
   `
-  info_fecha.innerHTML=`<p>Est. Delivery: June</p>`
+  info_fecha.innerHTML = `<p>Est. Delivery: June</p>`
 
 }
 
-info_vel_0(1,true)
+info_vel_0(1, true)
 
-function info_vel_1 (info_vel){
+function info_vel_1(info_vel) {
   let = info_vel_motor_mi = document.getElementById("num_millas")
   let = info_vel_motor_mph = document.getElementById("num_mph")
   let = info_vel_motor_sec = document.getElementById("num_sec")
-  let info_motor_mensaje =document.getElementById("idmensaje3")
-  let info_fecha =document.getElementById("fecha_entrega")
+  let info_motor_mensaje = document.getElementById("idmensaje3")
+  let info_fecha = document.getElementById("fecha_entrega")
 
   info_vel_motor_mi.innerHTML = `  369  `
   info_vel_motor_mph.innerHTML = `  200  `
@@ -101,5 +142,6 @@ function info_vel_1 (info_vel){
       </lu>
     </div>
       `
-    info_fecha.innerHTML=`<p>Est. Delivery: December</p>`
+  info_fecha.innerHTML = `<p>Est. Delivery: December</p>`
 }
+
