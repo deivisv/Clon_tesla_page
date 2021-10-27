@@ -1,3 +1,6 @@
+::-webkit-scrollbar {display: none;}
+
+
 .banner a {
     color: #5c5c5c;
     text-decoration: none;
@@ -25,23 +28,23 @@
 }
 
 .img1 {
-    background-image: url('imagenes/ModelS.jpg');
+    background-image: url('../imagenes/model3.jpg');
 }
 
 .img2 {
-    background-image: url('imagenes/modelY.jpg');
+    background-image: url('../imagenes/modelY.jpg');
 }
 .img3 {
-    background-image: url('imagenes/model3.jpg');
+    background-image: url('../imagenes/model3.jpg');
 }
 .img4 {
-    background-image: url('imagenes/modelX.jpg');
+    background-image: url('../imagenes/modelX.jpg');
 }
 .img5 {
-    background-image: url('imagenes/solarPanels.jpg');
+    background-image: url('../imagenes/solarPanels.jpg');
 }
 .img6 {
-    background-image: url('imagenes/solarRoofs.jpg');
+    background-image: url('../imagenes/solarRoofs.jpg');
 }
 .img7 {
     height: 95vh;
@@ -70,23 +73,23 @@
 .titulos {
     margin-top: 7%;
     width: 30%;
+    --copy-opacity: 0.99;
 }
 
 .titulos h6 {
     font-weight: 400;
 }
 
+
 .conBotones {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 80%;
-    width: 100%;
     margin: 0;
+    transform: translateY(100px);
 }
 
+
+
 .boton {
-    width: 46%;
+    width: 260px;
     border-radius: 20px;
     font-size: .8rem;
     font-weight: 600;
@@ -128,15 +131,6 @@
     /* transform: translate(0px, -10px); */
 }
 
-.menuDes {
-    border: none;
-    background-color: #7777771c;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight:600;
-    padding: 8px 10px;
-}
-
 .menu {
     padding-left: 32px;
     padding-right: 15px;
@@ -147,6 +141,7 @@
     border-radius: 8px;
 
 }
+
 
 .menu a {
     margin: 0;
@@ -180,13 +175,29 @@ footer a:hover {
     border-bottom: none;
 }
 
+@media (max-width: 640px) {
+    .boton {
+        width: 92%;
+    }
+    .logoT {
+        width: 25vw;
+    }
+}
+
+@media (min-width: 991px) {
+    .ocultarGrande {
+        display: none;
+    }
+}
+
 @media (max-width: 800px) {
     .logoT {
-        width: 20vw;
+        width: 30vw;
     }
     .titulos {
         margin-top: 15%;
     }
+
 }
 
 @media (min-width: 800px) {
@@ -206,6 +217,24 @@ footer a:hover {
         margin-top: 10%;
     }
 }
+
+@media (max-width: 1200px) {
+    .hideR {
+        display: none;
+    }
+    .botonMenu {
+        background-color: #7777771c;
+        border-radius: 15px;
+        transform: translateX(45px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .hideS {
+        display: none;
+    }
+}
+
 @media (min-width: 1500px) {
     .logoT {
         width: 9vw;
