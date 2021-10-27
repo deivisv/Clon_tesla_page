@@ -24,7 +24,17 @@ function loggearse(){
 }
 
 function devolverse(){
-    setTimeout(function(){window.location.href = "https://www.tesla.com"}, 4000);
+    setTimeout(function(){window.location.href = "https://www.tesla.com"}, 4000); /* cambiar por la página principal */
+    return;  
+}
+
+function ircrear(){
+    setTimeout(function(){window.location.href = "create.html"}, 4000); /* cambiar por la página principal */
+    return;  
+}
+
+function irsignin(){
+    setTimeout(function(){window.location.href = "signin.html"}, 4000); /* cambiar por la página principal */
     return;  
 }
 
@@ -116,7 +126,7 @@ function guardarInfo() {
         timer: 3000
     })
 
-    setTimeout(function(){window.location.href = "https://www.tesla.com"}, 4000);   
+    setTimeout(function(){window.location.href = "https://www.tesla.com"}, 4000);  /* cambiar por la página principal */
 }};
 
 /* function borrar_elemento(indice_dato){
